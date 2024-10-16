@@ -41,7 +41,8 @@ SELECT SUM(purch_amt) FROM orders;
 SELECT AVG(purch_amt) FROM orders;
 
 --5
-SELECT COUNT(cust_name) FROM customers;
+SELECT COUNT(cust_name) FROM customers
+WHERE cust_name IS NOT NULL;
 
 --6
 SELECT MIN(purch_amt) FROM orders;
